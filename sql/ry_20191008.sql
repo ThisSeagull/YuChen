@@ -7,10 +7,10 @@ Source Host           : 127.0.0.1:3306
 Source Database       : ry
 
 Target Server Type    : MYSQL
-Target Server Version : 80031
+Target Server Version : 800311
 File Encoding         : 65001
 
-Date: 2022-10-14 14:02:12 1
+Date: 2022-10-14 14:02:12 11
 */
 
 SET FOREIGN_KEY_CHECKS=0;
