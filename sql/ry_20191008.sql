@@ -6,7 +6,7 @@ Source Server Version : 80031
 Source Host           : 127.0.0.1:3306
 Source Database       : ry
 
-Target Server Type    : MYSQL1
+Target Server Type    : MYSQL12
 Target Server Version : 800311
 File Encoding         : 65001
 
