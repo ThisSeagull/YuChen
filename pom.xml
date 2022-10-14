@@ -32,11 +32,11 @@
 		<poi.version>3.17</poi.version>
 		<velocity.version>1.7</velocity.version>
 	</properties>
-	
+
     <!-- 依赖声明 -->
     <dependencyManagement>
         <dependencies>
-        
+
             <!-- SpringBoot的依赖配置-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -80,7 +80,7 @@
 				<artifactId>shiro-ehcache</artifactId>
 				<version>${shiro.version}</version>
 			</dependency>
-	
+
 			<!-- thymeleaf模板引擎和shiro框架的整合 -->
 			<dependency>
 				<groupId>com.github.theborakompanioni</groupId>
@@ -202,7 +202,15 @@
 	            <artifactId>ruoyi-common</artifactId>
 	            <version>${ruoyi.version}</version>
 	        </dependency>
-	        
+
+			<dependency>
+				<groupId>.clients</groupId>
+				<artifactId>jedis</artifactId>
+				<version>3.1.0</version>
+			</dependency>
+
+
+
         </dependencies>
     </dependencyManagement>
 

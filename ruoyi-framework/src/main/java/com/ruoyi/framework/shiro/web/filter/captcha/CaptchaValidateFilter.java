@@ -19,7 +19,7 @@ public class CaptchaValidateFilter extends AccessControlFilter
     /**
      * 是否开启验证码
      */
-    private boolean captchaEnabled = true;
+    private boolean captchaEnabled = false;
 
     /**
      * 验证码类型
@@ -48,6 +48,7 @@ public class CaptchaValidateFilter extends AccessControlFilter
     protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue)
             throws Exception
     {
+
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
         // 验证码禁用 或不是表单提交 允许访问
         if (captchaEnabled == false || !"post".equals(httpServletRequest.getMethod().toLowerCase()))

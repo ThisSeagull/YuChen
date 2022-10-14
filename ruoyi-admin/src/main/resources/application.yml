@@ -31,8 +31,8 @@ server:
 # 日志配置
 logging:
   level:
-    com.ruoyi: debug
-    org.springframework: warn
+    com.ruoyi: error
+    org.springframework: error
 
 # 用户配置
 user:
@@ -42,6 +42,8 @@ user:
 
 # Spring配置
 spring:
+  application:
+  name: ruoyi
   # 模板引擎
   thymeleaf:
     mode: HTML
@@ -70,6 +72,11 @@ spring:
       # 热部署开关
       enabled: true
 
+  cloud:
+    nacos:
+    discovery:
+    server-addr: 127.0.0.1:8848
+
 # MyBatis
 mybatis:
     # 搜索指定包别名
@@ -96,7 +103,7 @@ shiro:
     # 首页地址
     indexUrl: /index
     # 验证码开关
-    captchaEnabled: true
+    captchaEnabled: false
     # 验证码类型 math 数组计算 char 字符
     captchaType: math
   cookie:
@@ -128,3 +135,6 @@ xss:
   excludes: /system/notice/*
   # 匹配链接
   urlPatterns: /system/*,/monitor/*,/tool/*
+
+
+
